@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import styled from "styled-components";
+import Toggle from "./components/Toggle/Toggle";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const Wrapper = styled.main`
+  max-width: 50%;
+  margin: 10rem auto;
+`;
 
-export default App;
+const Preview = styled.section`
+  display: flex;
+  border: 3px solid #952d57;
+  border-radius: 10px;
+  padding: 2rem;
+`;
+
+export default () => (
+  <Wrapper>
+    <h1>UI Testing Demo</h1>
+    <Preview>
+      <Toggle />
+    </Preview>
+  </Wrapper>
+);

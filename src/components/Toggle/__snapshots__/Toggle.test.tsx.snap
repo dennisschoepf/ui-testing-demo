@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Toggle should render 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  margin-top: 2rem;
+  visibility: hidden;
+}
+
+.c1 {
+  padding: 0.4rem 2rem 0.5rem;
+  border: 2px solid white;
+  background-color: #360028;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.c1:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #360028;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <div
+    className="c2"
+  >
+    123
+  </div>
+</div>
+`;
